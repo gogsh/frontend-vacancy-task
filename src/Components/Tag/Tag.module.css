@@ -1,0 +1,15 @@
+.tag {
+  padding: 8px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.primary {
+  background: var(--gradi-primary);
+  color: var(--white);
+}
+
+.default {
+  background: none;
+  color: var(--neutral-300);
+}

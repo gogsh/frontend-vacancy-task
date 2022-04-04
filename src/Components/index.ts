@@ -1,2 +1,5 @@
 export * from './Navigation'
 export * from './MUIButton'
+export * from './Page'
+export * from './Icon'
+export * from './Tag'
