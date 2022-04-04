@@ -8,8 +8,6 @@ import { MUIButton } from 'Components'
 import type { MUIButtonViews } from 'Components'
 import type { MenuItem } from '../menu'
 
-import classes from '../Navigation.module.css'
-
 interface NavigationItemProps {
   item: MenuItem
 }
@@ -27,15 +25,8 @@ export const NavigationItem: FC<NavigationItemProps> = observer(({ item }) => {
     [item.href, location.pathname],
   )
 
-  console.log(itemView)
-
   return (
-    <MUIButton
-      className={classes.item}
-      onClick={onItemClick}
-      view={itemView}
-      startIcon={item.icon}
-    >
+    <MUIButton onClick={onItemClick} view={itemView} startIcon={item.icon}>
       {item.title}
     </MUIButton>
   )
