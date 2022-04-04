@@ -1,7 +1,7 @@
 import { makeObservable, observable, action, computed } from 'mobx'
 
 import { tokens, categories } from './tokens'
-import type { Token, TokenCategories, Category } from './tokens'
+import type { Token, Category } from './tokens'
 
 import type { RootStore } from '../RootStore'
 

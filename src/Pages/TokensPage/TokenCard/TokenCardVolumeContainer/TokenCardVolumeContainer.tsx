@@ -15,8 +15,7 @@ interface TokenCardVolumeContainerProps {
 
 export const TokenCardVolumeContainer: FC<TokenCardVolumeContainerProps> = observer(
   ({ value, percentage }) => {
-    const color = useMemo(() => (percentage < 0 ? 'textRed' : 'textPurple'), [value])
-    console.log(percentage, color)
+    const color = useMemo(() => (percentage < 0 ? 'textRed' : 'textPurple'), [percentage])
 
     return (
       <div className={classes.horizontalInfoContainer}>

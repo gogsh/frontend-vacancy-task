@@ -1,11 +1,16 @@
 @import 'Fonts/fonts.css';
 
 :root {
-
   /* Цвета */
   --white: #FFFFFF;
   --black: #000000;
   --primary: #6347F5;
+  --grey: #93949D;
+  --green: #30BF8C;
+  --red: #FF647C;
+  --neutral-page: #F7F7FB;
+  --neutral-200: #5D5E6C;
+  --neutral-300: #93949D;
 
   /** Шрадиент */
   --gradi-primary: linear-gradient(201.66deg, #B380FD 12.94%, #6347F5 78.23%);
@@ -17,8 +22,12 @@
   --h1: 36px;
   --large: 21px;
   --medium: 18px;
+  --semi-small: 16px;
   --small: 14px;
 
+  /** Тени */
+  --hover-shadow: 0px 0px 0px 2px #6347F5;
+  --card-shadow: rgba(0, 0, 0, 0.04);
 }
 
 body {
