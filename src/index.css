@@ -1,9 +1,24 @@
-@import './fonts/fonts.css';
+@import 'Fonts/fonts.css';
 
 :root {
+
+  /* Цвета */
+  --white: #FFFFFF;
+  --black: #000000;
+  --primary: #6347F5;
+
+  /** Шрадиент */
+  --gradi-primary: linear-gradient(201.66deg, #B380FD 12.94%, #6347F5 78.23%);
+
   /* Шрифты */
   --font-medium: 'Montserrat-Medium', sans-serif;
-  /* Тени */
+
+  /* Размеры шрифта */
+  --h1: 36px;
+  --large: 21px;
+  --medium: 18px;
+  --small: 14px;
+
 }
 
 body {

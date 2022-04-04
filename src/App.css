@@ -1,21 +1,12 @@
 .app {
-  background-color: #F7F7FB;
   display: flex;
-}
-
-.menu {
-  padding: 24px;
-  width: 320px;
-  background: linear-gradient(200deg, #B380FD 12%, #6347F5 78%);
-}
-
-.menu-item {
-  margin-bottom: 24px;
+  background-color: var(--gradi-primary);
 }
 
 .tokens {
-  width: 100%;
+  width: calc(100vh - 320px);
   padding: 32px;
+  background-color: #F7F7FB;
 }
 
 .token {

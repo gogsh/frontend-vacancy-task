@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import type { FC } from 'react'
 import { tokens, categories } from './tokens'
-import { menu } from './menu'
 import './App.css'
 
 import { Provider, observer } from 'mobx-react'
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import { store } from './store'
+
+import { Navigation } from './Components'
 
 export const App: FC = observer(() => {
   const [category, setCategory] = useState(categories[0])
@@ -16,15 +16,12 @@ export const App: FC = observer(() => {
   return (
     <Provider store={store}>
       <div className="app">
-        <div className="menu">
-          {menu.map((item) => (
-            <div className="menu-item">{item.title}</div>
-          ))}
-        </div>
         <BrowserRouter>
+          <Navigation />
           <Routes>
+            <Route path="/" element={<div>123</div>} />
             <Route
-              path="/"
+              path="/tokens"
               element={
                 <div className="tokens">
                   {tokens.map((item) => (
