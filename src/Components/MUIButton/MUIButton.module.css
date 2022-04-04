@@ -1,0 +1,50 @@
+.button {
+  border-radius: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.button :global(.MuiButtonBase-root) {
+  width: 100%;
+  justify-content: flex-start;
+  padding: 16px 26px;
+  font-family: var(--font-medium);
+  text-transform: none;
+  font-size: var(--medium);
+  border-radius: 16px;
+}
+
+.button :global(.MuiButton-startIcon) {
+  color: var(--primary);
+  margin-left: 0;
+  margin-right: 26px;
+}
+
+.text {
+  margin-top: 2px;
+}
+
+.default {
+  background: var(--white);
+
+}
+
+.default :global(.MuiButton-text) {
+  color: var(--black);
+}
+
+.onlyText {
+
+}
+
+.onlyText :global(.MuiButton-text) {
+  color: var(--white);
+}
+
+.onlyText :global(.MuiButton-startIcon) {
+  color: var(--white);
+}
+
+.onlyText:hover {
+  outline: 2px solid var(--white);
+}
