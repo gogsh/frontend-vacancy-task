@@ -1,0 +1,23 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw - 224px);
+  padding: 66px 128px;
+  gap: 40px;
+  background: var(--neutral-page);
+  box-sizing: border-box
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text {
+  font-size: var(--h1);
+}
+
+.empty {
+  margin: 140px auto;
+}
