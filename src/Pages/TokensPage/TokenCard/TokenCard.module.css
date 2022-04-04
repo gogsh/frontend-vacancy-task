@@ -1,0 +1,93 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 16px;
+  background-color: var(--white);
+  transition: all 0.5s;
+  padding: 24px;
+  cursor: pointer;
+  box-shadow: var(--card-shadow);
+}
+
+.wrapper:hover {
+  box-shadow: var(--hover-shadow);
+}
+
+.token {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.number {
+  width: 26px;
+  color: var(--grey);
+}
+
+.logo{
+  width: 40px;
+}
+
+.horizontalInfoContainer {
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.verticalInfoContainer {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2px;
+}
+
+.peoples {
+  gap: 8px;
+}
+
+.priceChange {
+  color: var(--grey);
+}
+
+.textSmall {
+  font-size: var(--small);
+}
+
+.textMedium {
+  font-size: var(--medium);
+}
+
+.textSemiSmall {
+  font-size: var(--semi-small);
+}
+
+.textLarge {
+  font-size: var(--large);
+}
+
+.textPurple {
+  color: var(--primary);
+}
+
+.textRed {
+  color: var(--red);
+}
+
+.arrow {
+  transition: all 0.3s;
+  margin-left: auto;
+  margin-right: 8px;
+}
+
+.isOpen {
+  transform: rotate(180deg);
+}
+
+.description {
+  color: var(--neutral-200);
+}
